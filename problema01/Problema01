@@ -1,0 +1,57 @@
+1. Inicio
+2. funcion principal()
+3. opcion, i[0-n]
+
+4. Escribir "Ingrese 1 si desea realizar el área del cuadrado\nIngrese 2 
+    si desea obtener el área del triángulo\nIngrese 3 si desea obtener 
+    el área de un rectángulo"
+5. Leer opcion
+
+6. Si (opcion == 1) entonces
+7.      obtenerAreaCuadrado()
+8. De lo contrario
+9.      Si (opcion == 2) entonces
+10.         obtenerAreaTriangulo()
+11.     De lo contrario
+12.         Si (opcion == 3) entonces
+13.             obtenerAreaRectangulo()
+14.         De lo contrario
+15.             Escribir "Error al elegir opción"
+16.         Fin si
+17.     Fin si
+18. Fin si
+19. fin funcion principal()
+
+20. funcion obtenerAreaCuadrado()
+21.     lado, i[0-n]
+22.     area, i[0-n]
+23.     Escribir "Ingrese el lado del cuadrado"
+24.     Leer lado
+25.     area <-- lado * lado
+26.     Escribir "El área del cuadrado es: " + area
+27. fin funcion obtenerAreaCuadrado
+
+28. funcion obtenerAreaTriangulo()
+29.     base, i[0-n]
+30.     altura, i[0-n]
+31.     area, i[0-n]
+32.     Escribir "Ingrese la base del triangulo"
+33.     Leer base
+34.     Escribir "Ingrese la altura del triangulo"
+35.     Leer altura
+36.     area <--(altura * base)/2
+37.     Escribir "El area del triángulo es: " + area
+38. fin funcion obtenerAreaTriangulo()
+
+39. funcion obtenerAreaRectangulo()
+40.     area, i[0-n]
+41.     base, i[0-n]
+42.     altura, i[0-n]
+43.     Escribir "Ingrese la base del rectángulo"
+44.     Leer base
+45.     Escribir "Ingrese la altura del rectángulo"
+46.     Leer altura
+47.     area <-- base * altura
+48.     Escribir "El area del rectángulo es: " + area
+49. fin funcion obtenerAreaRectangulo()
+50. Fin

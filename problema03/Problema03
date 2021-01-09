@@ -1,0 +1,47 @@
+1. Inicio
+2. funcion principal()
+3. opcion, i[0-n]
+4. cedula, i[0-n]
+5. nombre, x(200)[{a-z},{A-Z}]
+6. Escribir "Ingrese su cedula"
+7. Leer cedula
+8. Escribir "Ingrese el nombre"
+9. Leer nombre
+10. Escribir "Ingrese 1 si desea saber el valor de la planilla de luz\nIngrese 2 
+    si desea saber el precio de un bien inmueble"
+11. Leer opcion
+12. Si (opcion == 1)entonces
+13.      calcularValorLuz(nombre, cedula)
+14. De lo contrario 
+15.     Si (opcion == 2)entonces
+16.         calcularPrecio(nombre, cedula)
+17.     De lo contrario
+18.         Escribir "Opción incorrecta"
+19.     fin si
+20. fin si
+21. fin funcion principal
+
+22. funcion calcularValorLuz(nom, x(200); ced, i)
+23.     valorKilovatio, d[0-n]
+24.     kilovatiosMes, d[0-n]
+25.     resultado, d[0-n]
+26.     Escribir "Ingrese el valor del kilovatio"
+27.     Leer valorKilovatio
+28.     Escribir "Ingrese el numero de kilovatios consumidos al mes"
+29.     Leer kilovatiosMes
+30.     resultado <-- valorKilovatio * kilovatiosMes
+31.     Escribir "Cliente " + nom + "con cedula " + ced + 
+            "debe cancelar el valor de $" + resultado 
+32. fin funcion calcularValorLuz  
+
+33. funcion calcularPrecio(nom2, x(200); ced2, d)
+34.     valor, d[0-n]
+35.     valorPagar, d[0-n]
+36.     Escribir "Ingrese el valor del inmueble"
+37.     Leer valor
+38.     valorPagar <-- (valor * 2)/ 100
+39.     Escribir "Cliente " + nom2 + "con cedula " + ced2 + "tiene un bien 
+            inmueble valorado en $" + valor + "y tiene que pagar de precio $" + valorPagar
+40. fin funcion calcularPrecio
+41. Fin
+

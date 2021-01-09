@@ -1,0 +1,42 @@
+1. Inicio
+2. funcion principal()
+3. (notasEstudiantes(4), d[0-n])
+4. cadena, x(200)[{a-z},{A-Z}]
+5. contador, i[0-n]
+
+6. Para (contador <-- 0, contador < 4,1)haga
+7.      Escribir "Ingrese nota del estudiante"
+8.      Leer notasEstudiantes[contador]                          
+9. Fin_Para
+10. cadena <-- promedioCualitativo(notasEstudiantes[0],notasEstudiantes[1],
+                    notasEstudiantes[2],notasEstudiantes[3])
+11. Escribir cadena
+12. fin funcion principal()
+
+13. funcion promedioCualitativo(nota1, d; nota2, d; nota3, d; nota4, d) : x
+14.     suma, d[0-n]
+15.     promedio, d[0-n]
+16.     promCualitativo, x(200)[{a-z},{A-Z}] 
+17.     mensaje, x(200)[{a-z},{A-Z}] <-- ""
+18.     suma <-- nota1 + nota2 + nota3 + nota4
+19.     promedio <--  suma / 4
+20.     Si (promedio >= 0) and (promedio <= 5)entonces
+21.         promCualitativo <-- "Regular"
+22.     De lo contrario
+23.         Si (promedio >= 5.1) and (promedio <= 8)entonces
+24.             promCualitativo <-- "Bueno"
+25.         De lo contrario
+26.             Si (promedio >= 8.1) and (promedio <= 9)entonces
+27.                 promCualitativo <-- "Muy Bueno"
+28.             De lo contrario
+29.                 Si (promedio >= 9.1) and (promedio <= 10)entonces
+30.                     promCualitativo <-- "Sobresaliente"
+31.                 Fin Si
+32.             Fin Si  
+33.         Fin Si
+34.     Fin si
+35.     mensaje <-- "El promedio de las notas: " + nota1 + ", "+ nota2 + ", "+ nota3 + ", "+ nota4 + " es " + promCualitativo
+36.     retorna mensaje
+37. fin funcion promedioCualitativo
+38. Fin
+
